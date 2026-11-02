@@ -1,0 +1,154 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* ===== CARTÃO DE LOGIN ===== */
+
+.login-container {
+    background: white;
+
+    width: 100%;
+    max-width: 420px;
+
+    padding: 45px 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+}
+
+/* ===== LOGO ===== */
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.logo-red {
+    color: #e53945;
+}
+
+.logo-yellow {
+    color: #fbc02d;
+}
+
+.logo-blue {
+    color: #1565c0;
+}
+
+/* ===== TEXTOS ===== */
+
+h1 {
+    color: #333;
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 15px;
+
+    margin-bottom: 35px;
+}
+
+/* ===== BOTÃO GOOGLE ===== */
+
+.btn-google {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px;
+
+    background: white;
+    color: #333;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-google img {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-google:hover {
+    background: #f8f8f8;
+    border-color: #1565c0;
+
+    transform: translateY(-2px);
+}
+
+.btn-google:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* ===== MENSAGENS ===== */
+
+.mensagem {
+    margin-top: 20px;
+    font-size: 14px;
+
+    overflow-wrap: anywhere;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    margin-top: 40px;
+
+    color: #999;
+    font-size: 12px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+}
